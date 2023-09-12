@@ -26,6 +26,7 @@ git clone https://github.com/BetaTester772/assemblyGameBoardBackend.git
 2. 필요한 라이브러리를 설치합니다.
 
 ```bash
+cd ./backend/
 pip install -r requirements.txt
 ```
 
@@ -34,7 +35,7 @@ pip install -r requirements.txt
 4. `main.py` 파일을 실행하여 FastAPI 서버를 시작합니다:
 
 ```bash
-uvicorn main:app --host 0.0.0.0 --port 8000 --workers 4
+uvicorn main:app --host 0.0.0.0 --port 8000
 ```
 
 5. 웹 브라우저에서 `http://localhost:8000`에 접속하여 웹소켓 클라이언트를 확인합니다.
@@ -48,13 +49,11 @@ uvicorn main:app --host 0.0.0.0 --port 8000 --workers 4
 
 ## 사용 예시
 
-1. 웹소켓 클라이언트 페이지를 열고 서버로부터 스코어 정보를 실시간으로 받아옵니다.
+1. 게임 플레이어는 `/session_id` 엔드포인트를 호출하여 세션 아이디를 발급받습니다.
 
-2. 게임 플레이어는 `/session_id` 엔드포인트를 호출하여 세션 아이디를 발급받습니다.
+2. 발급받은 세션 아이디와 함께 게임 플레이어의 정보 및 스코어를 `/upload_game1`, `/upload_game2`, `/upload_game3` 엔드포인트에 업로드합니다.
 
-3. 발급받은 세션 아이디와 함께 게임 플레이어의 정보 및 스코어를 `/upload_game1`, `/upload_game2`, `/upload_game3` 엔드포인트에 업로드합니다.
-
-4. 서버는 업로드된 정보를 데이터베이스에 저장하고 상위 스코어 플레이어 목록을 업데이트합니다.
+3. 서버는 업로드된 정보를 데이터베이스에 저장하고 상위 스코어 플레이어 목록을 업데이트합니다.
 
 ## 주의사항
 
