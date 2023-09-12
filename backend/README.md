@@ -35,7 +35,7 @@ pip install -r requirements.txt
 4. `main.py` 파일을 실행하여 FastAPI 서버를 시작합니다:
 
 ```bash
-uvicorn main:app --host 0.0.0.0 --port 8000
+uvicorn main:app --port 8000
 ```
 
 5. 웹 브라우저에서 `http://localhost:8000`에 접속하여 웹소켓 클라이언트를 확인합니다.
