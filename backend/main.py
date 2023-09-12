@@ -126,7 +126,7 @@ def get_scores(request: Request, dev: int = 0, db: Session = Depends(get_db)):
     return {"game1": game1}
 
 
-@app.post("/55390bf270", status_code=204, tags=["게임 점수"])
+@app.post("/upload_game1", status_code=204, tags=["게임 점수"])
 def upload_game1(request: Request, _upload_game: UploadGame1, db: Session = Depends(get_db)):
     """
     :param request:
