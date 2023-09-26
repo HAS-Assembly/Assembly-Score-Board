@@ -6,3 +6,7 @@
 | -------------- | ------------------ | -------- | -------------------------- |
 | 안호성 (Hoseong Ahn) | [@BetaTester772](https://github.com/BetaTester772) | Backend | FastAPI, SQLAlchemy, Svelte |
 | 안세용 (Se-yong Ahn) | [@hiseyong](https://github.com/hiseyong) | Frontend | React                     |
+
+## URL
+* console: https://game.hees.academy/
+* score board: https://game.hees.academy/score_board
